@@ -1,9 +1,8 @@
-import Typewriter from 'typewriter-effect';
-import {       FaGithub, FaInstagram } from 'react-icons/fa';
 
-import React from 'react'
-import { FaFacebookSquare } from 'react-icons/fa'
-import { IoLogoLinkedin } from 'react-icons/io5'
+import Typewriter from 'typewriter-effect';
+import React from 'react';
+import { FaFacebookSquare, FaGithub, FaInstagram } from 'react-icons/fa';
+import { IoLogoLinkedin } from 'react-icons/io5';
 
 function HeroSection() {
   return (
