@@ -27,7 +27,7 @@ function HeroSection() {
           </div>
 
           {/* Main Heading Below Typewriter */}
-          <h1 className="text-5xl font-extrabold text-white leading-tight">
+          <h1 className="text-3xl font-extrabold text-white leading-tight">
             Your on go <br /> Developer to create <br /> your Web-apps
           </h1>
 
@@ -57,7 +57,7 @@ function HeroSection() {
  {/* Right Section (Bigger Image with Strong Pink Glow) */}
 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center">
   <img 
-    className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-2xl shadow-[0_20px_50px_-10px_rgba(219,39,119,0.9)]"
+    className="w-70 h-70 md:w-96 md:h-96 object-cover rounded-2xl shadow-[0_20px_50px_-10px_rgba(219,39,119,0.9)]"
     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZ8zyhXAMSPq0PhMb5KnjOE4czp9c1KeVQQ&s" 
     alt="Hero Image" 
   />

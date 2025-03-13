@@ -13,13 +13,13 @@ function Header() {
               alt="Logo"
             />
 
-            <span className="ml-3 text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-pink-300 to-white">
+            <span className="ml-3 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-pink-300 to-white">
               Anza Sarwar
             </span>
           </a>
 
           {/* Navigation Menu */}
-          <nav className="flex space-x-6 text-lg font-semibold">
+          <nav className="flex space-x-6 text-lg mb-3 font-semibold">
             {[
               { name: "Home", path: "/" },
               { name: "About", path: "/AboutUs" },
