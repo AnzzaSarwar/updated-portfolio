@@ -1,8 +1,94 @@
+/* globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body{
-  background-image: url(https://d1o2pwfline4gu.cloudfront.net/m/t/10809/10799041/a-0005.jpg    );
 
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  position: relative;
+  overflow: auto; /* Scroll enable karne ke liye */
 }
 
+/* Bubbles Background Effect */
+body::after {
+  content: '';
+  position: fixed; /* Fixed position taaki scroll ke sath na move ho */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Content ke peeche rahe */
+  background: transparent;
+  pointer-events: none; /* Bubbles par click se bachane ke liye */
+}
+
+/* Individual Bubbles */
+.bubble {
+  position: fixed; /* Fixed position taaki scroll ke sath na move ho */
+  width: 40px; /* Bubble size */
+  height: 40px;
+  background: rgba(255, 105, 180, 0.6); /* Pink color with transparency */
+  border-radius: 50%; /* Perfect circle */
+  animation: float 10s infinite ease-in; /* Slow animation */
+  bottom: -100px; /* Start from bottom */
+}
+
+/* Bubble Floating Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100vh); 
+    opacity: 0;
+  }
+}
+
+/* Customize bubbles */
+.bubble:nth-child(1) {
+  left: 10%;
+  width: 50px;
+  height: 50px;
+  animation-duration: 15s; /* Slower animation */
+  animation-delay: 0s; /* Start immediately */
+}
+
+.bubble:nth-child(2) {
+  left: 30%;
+  width: 40px;
+  height: 40px;
+  animation-duration: 12s;
+  animation-delay: 2s; /* Start after 2 seconds */
+}
+
+.bubble:nth-child(3) {
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  animation-duration: 18s;
+  animation-delay: 4s; /* Start after 4 seconds */
+}
+
+.bubble:nth-child(4) {
+  left: 70%;
+  width: 30px;
+  height: 30px;
+  animation-duration: 10s;
+  animation-delay: 6s; /* Start after 6 seconds */
+}
+
+.bubble:nth-child(5) {
+  left: 90%;
+  width: 45px;
+  height: 45px;
+  animation-duration: 14s;
+  animation-delay: 8s; /* Start after 8 seconds */
+}

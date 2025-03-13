@@ -4,6 +4,7 @@ import Skills from './Skills';
 import Header from './Header';
 import HeroSection from './HeroSection';
 import Project from './Project';
+import Service from './Service';
 
 
 
@@ -14,13 +15,14 @@ const project = () => {
 
            <Header />
             <HeroSection />
+            <br />
+            <br /><br /><br />
+            <br /><br />
  <Skills />
-<br></br>
-<br></br>
-<br></br>
-<br></br>
+
 <Project />
-<br></br>
+<Service />
+
 <section className="text-gray-600 body-font relative">
   <div className="absolute inset-0 bg-black-300">
     <iframe 
@@ -34,7 +36,7 @@ const project = () => {
     ></iframe>
   </div>
   <div className="container px-5 py-24 mx-auto flex ">
-    <div className="lg:w-1/3 md:w-1/2  rounded-lg p-8  bg-gradient-to-t from-black to-sky-950 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+    <div className="lg:w-1/3 md:w-1/2  rounded-lg p-8 border-2 border-white shadow-black bg-gradient-to-t from-black to-gray-600 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
       <h2 className="text-white text-lg mb-1 font-medium title-font">Feedback</h2>
       <p className="leading-relaxed mb-5 text-white">Fill your form</p>
       <div className="relative mb-4">
@@ -54,14 +56,14 @@ const project = () => {
           className="w-full bg-white rounded border border-gray-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
         ></textarea>
       </div>
-      <button className="text-white bg-sky-700 border-0 py-2 px-6 focus:outline-none hover:bg-slate-600 rounded text-lg">Button</button>
+      <button className="text-white bg-pink-400 border-2 border-pink-300 py-2 px-6 focus:outline-none hover:bg-slate-600 rounded text-lg">Send message</button>
       <p className="text-xs text-gray-500 mt-3">"Share your thoughts with us and help shape a better future through meaningful feedback today.</p>
     </div>
   </div>
 </section>
 
-<br></br>
-<footer className="text-gray-600 body-font bg-gradient-to-t from-black to-sky-950">
+
+<footer className="text-gray-600 body-font border-t-2 border-t-pink-200 bg-gradient-to-bl from-black to-pink-600">
   <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
     <a className="flex title-font font-medium items-center md:justify-start justify-center text-sky-200">
     
@@ -69,7 +71,7 @@ const project = () => {
 
       <span className="ml-3 text-xl ">Anza Sarwar</span>
     </a>
-    <p className="text-sm text-sky-300 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+    <p className="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
       © 2024 Anza Portfolio-
       <a href="https://twitter.com/knyttneve" className="text-sky-100 ml-1" rel="noopener noreferrer" target="_blank">@msarwarbajwamsarwarbajwa@gmail.com</a>
     </p>

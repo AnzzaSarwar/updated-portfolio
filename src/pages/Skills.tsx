@@ -1,78 +1,65 @@
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
+interface Skill {
+  src: string;
+  alt: string;
+  invert?: boolean;
+}
 
-export default function Home() {
-  return ( 
-  <>
-  <div>
- 
+const skills: Skill[] = [
+  { src: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg", alt: "React" },
+  { src: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg", alt: "Python" },
+  { src: "https://cdn.worldvectorlogo.com/logos/next-js.svg", alt: "Next.js", invert: true },
+  { src: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png", alt: "JavaScript" },
+  { src: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg", alt: "Git" },
+  { src: "https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg", alt: "NPM" },
+  { src: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg", alt: "Tailwind CSS" },
+  { src: "https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg", alt: "HTML5" },
+  { src: "https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg", alt: "CSS3" },
+  { src: "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg", alt: "TypeScript" }
+];
 
-<section className="text-sky-600 body-font">
-  <div className="container px-5 py-24 mx-auto bg-gradient-to-bl from-black to-sky-950 animate-pulse ">
-    <div className="text-center mb-20 ">
-      <h1 className="font-semibold text-sky-100 text-5xl font-5xl text-center title-font  mb-4">My Skills</h1>
-      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
-    </div>
-    <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-      <div className="p-2 sm:w-1/2 w-full">
-        <div className="bg-gradient-to-br from-black to-sky-950 rounded flex p-4 h-full items-center border-2 border-sky-400 px-4 py-2 border-s-4 border-s-sky-300 border-e-4 border-e-sky-400 font-serif text-white">
-          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-            <path d="M22 4L12 14.01l-3-3"></path>
-          </svg>
-          <span className="title-font font-medium">HTML hyper text markup language</span>
-        </div>
-      </div>
-      <div className="p-2 sm:w-1/2 w-full">
-        <div className=" text-white bg-gradient-to-br from-black to-sky-950 rounded flex p-4 h-full items-center  border-2 border-sky-400 px-4 py-2 border-s-4 border-s-sky-300 border-e-4 border-e-sky-400 font-serif">
-          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-            <path d="M22 4L12 14.01l-3-3"></path>
-          </svg>
-          <span className="title-font font-medium">Css Cascading Stylesheet</span>
-        </div>
-      </div>
-      <div className="p-2 sm:w-1/2 w-full">
-        <div className= "bg-gradient-to-br from-black to-sky-950   rounded flex p-4 h-full items-center  border-2 border-sky-400 px-4 py-2 border-s-4 border-s-sky-300 border-e-4 border-e-sky-400 font-serif text-white">
-          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-            <path d="M22 4L12 14.01l-3-3"></path>
-          </svg>
-          <span className="title-font font-medium">Javascript</span>
-        </div>
-      </div>
-      <div className="p-2 sm:w-1/2 w-full">
-        <div className="bg-gradient-to-br from-black to-sky-950 rounded flex p-4 h-full items-center  border-2 border-sky-400 px-4 py-2 border-s-4 border-s-sky-300 border-e-4 border-e-sky-400 font-serif text-white">
-          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-            <path d="M22 4L12 14.01l-3-3"></path>
-          </svg>
-          <span className="title-font font-medium">Typescript</span>
-        </div>
-      </div>
-      <div className="p-2 sm:w-1/2 w-full">
-        <div className="bg-gradient-to-br from-black to-sky-950 rounded flex p-4 h-full items-center  border-2 border-sky-400 px-4 py-2 border-s-4 border-s-sky-300 border-e-4 border-e-sky-400 font-serif text-white">
-          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-            <path d="M22 4L12 14.01l-3-3"></path>
-          </svg>
-          <span className="title-font font-medium">Next.js</span>
-        </div>
-      </div>
-      <div className="p-2 sm:w-1/2 w-full">
-        <div className="bg-gradient-to-br from-black to-sky-950 rounded flex p-4 h-full items-center  border-2 border-sky-400 px-4 py-2 border-s-4 border-s-sky-300 border-e-4 border-e-sky-400 font-serif text-white">
-          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" className="text-indigo-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
-            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-            <path d="M22 4L12 14.01l-3-3"></path>
-          </svg>
-          <span className="title-font font-medium">Tailwaind Css</span>
-        </div>
+const SkillsSlider: React.FC = () => {
+  const settings = {
+    
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: true,
+    responsive: [
+      { breakpoint: 1024, settings: { slidesToShow: 3 } },
+      { breakpoint: 768, settings: { slidesToShow: 2 } },
+      { breakpoint: 480, settings: { slidesToShow: 1 } }
+    ]
+  };
+
+  return (
+    <div className="text-center py-10 bg-gradient-to-b from-black  to-gray-800 text-white">
+      <h2 className="text-4xl font-bold">Skills</h2>
+      <p className="text-gray-400 mt-2">-- Have a look at some of my skills I specialized in --</p>
+
+      <div className="mt-6 w-full max-w-5xl mx-auto px-4">
+        <Slider {...settings}>
+          {skills.map((skill, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <img
+                src={skill.src}
+                alt={skill.alt}
+                className={`w-24 h-24 md:w-32 md:h-32 object-contain transition-transform transform hover:scale-110 ${skill.invert ? 'filter invert' : ''}`}
+              />
+              <p className="mt-2 text-lg font-semibold">{skill.alt}</p>
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
-  </div>
-</section>
+  );
+};
 
-
-  </div>
-  </>
-  )
-  }
+export default SkillsSlider;
