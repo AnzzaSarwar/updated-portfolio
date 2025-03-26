@@ -40,6 +40,8 @@ const SkillsSlider: React.FC = () => {
   };
 
   return (
+    <>
+    
     <div className="text-center py-10 bg-gradient-to-b from-black  to-gray-800 text-white">
       <h2 className="text-4xl font-bold">Skills</h2>
       <p className="text-gray-400 mt-2">-- Have a look at some of my skills I specialized in --</p>
@@ -59,6 +61,7 @@ const SkillsSlider: React.FC = () => {
         </Slider>
       </div>
     </div>
+    </>
   );
 };
 

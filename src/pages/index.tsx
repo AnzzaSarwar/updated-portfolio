@@ -8,10 +8,17 @@ import Service from './Service';
 
 
 
-const project = () => {
-    return (
-        <div>
-            <title>anza sarwar</title>
+
+export default function index() {
+  return (
+  <>
+<div>
+           {/* Bubbles add karein */}
+           <div className="bubble"></div>
+      <div className="bubble"></div>
+      <div className="bubble"></div>
+      <div className="bubble"></div>
+      <div className="bubble"></div>
 
            <Header />
             <HeroSection />
@@ -65,12 +72,18 @@ const project = () => {
 
 <footer className="text-gray-600 body-font border-t-2 border-t-pink-200 bg-gradient-to-bl from-black to-pink-600">
   <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-    <a className="flex title-font font-medium items-center md:justify-start justify-center text-sky-200">
-    
-    <img className="w-10 h-10 rounded-full" src="https://as1.ftcdn.net/v2/jpg/03/75/67/74/1000_F_375677469_UzQt3JpGywuXxkOlCkG7SJXXbiGsampv.jpg" alt="my image" />
+  <a className="flex items-center text-white mb-4 md:mb-0">
+            <img
+              className="w-16 h-16 bg-transparent rounded-full"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrQ9RNFfTn1Pt-u4I7AiqLtsfhd11qln7b8Q&s"
+              alt="Logo"
+            />
 
-      <span className="ml-3 text-xl ">Anza Sarwar</span>
-    </a>
+            <span className="ml-3 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-pink-300 to-white">
+              Anza Sarwar
+            </span>   
+
+      </a>
     <p className="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
       © 2024 Anza Portfolio-
       <a href="https://twitter.com/knyttneve" className="text-sky-100 ml-1" rel="noopener noreferrer" target="_blank">@msarwarbajwamsarwarbajwa@gmail.com</a>
@@ -105,6 +118,8 @@ const project = () => {
 
            
         </div>
-    )
-}
-export default project;
+        </>
+    
+      )
+    }
+    
