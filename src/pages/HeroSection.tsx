@@ -9,10 +9,10 @@ function HeroSection() {
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         
         {/* Left Section (Text + Typewriter) */}
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 mt-10 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           
           {/* Typewriter Effect Moved to Top */}
-          <div className="mb-4 text-4xl font-extrabold text-pink-300">
+          <div className="mb-4 text-4xl ml-7 font-extrabold text-pink-300">
             <Typewriter
               options={{
                 strings: [
@@ -27,16 +27,16 @@ function HeroSection() {
           </div>
 
           {/* Main Heading Below Typewriter */}
-          <h1 className="text-3xl font-extrabold text-white leading-tight">
+          <h1 className="text-5xl font-extrabold ml-7 text-white leading-tight">
             Your on go <br /> Developer to create <br /> your Web-apps
           </h1>
 
-          <p className="mt-4 text-lg text-gray-300 max-w-lg">
+          <p className="mt-5 ml-7 text-lg text-gray-300 max-w-lg">
             Let me build your app look attractive and fully functional to make it use in the market and attract your client/customer towards your product.
           </p>
 
           {/* Social Media Icons */}
-          <div className="mt-6 flex space-x-6">
+          <div className="mt-6 flex space-x-6 ml-7" >
             <a href="https://www.facebook.com/profile.php?id=100094477968201" className="text-blue-500 text-3xl hover:text-blue-700">
               <FaFacebookSquare />
             </a>
@@ -55,7 +55,7 @@ function HeroSection() {
        {/* Right Section (Image) */}
 
  {/* Right Section (Bigger Image with Strong Pink Glow) */}
-<div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center">
+<div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center mr-10">
   <img 
     className="w-70 h-70 md:w-96 md:h-96 object-cover rounded-2xl shadow-[0_20px_50px_-10px_rgba(219,39,119,0.9)]"
     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZ8zyhXAMSPq0PhMb5KnjOE4czp9c1KeVQQ&s" 

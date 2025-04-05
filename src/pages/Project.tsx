@@ -8,7 +8,7 @@ export default function Home() {
        <section className="py-20 bg-gradient-to-b from-gray-800 via-pink-300 to-black text-white text-center">
        <h1 className="text-5xl font-bold">Past Works</h1>
        <p className="text-gray-400 mt-2">-- You can check out my past works here --</p>          <div className="container px-5 py-24 mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-[20px] ">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-[20px]  ">
               {[
                {
                 imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3L7aNJulgXcYGwiNfWYL9oZPQpayv7zwtKA&s",

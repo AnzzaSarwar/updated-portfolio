@@ -42,9 +42,9 @@ const SkillsSlider: React.FC = () => {
   return (
     <>
     
-    <div className="text-center py-10 bg-gradient-to-b from-black  to-gray-800 text-white">
-      <h2 className="text-4xl font-bold">Skills</h2>
-      <p className="text-gray-400 mt-2">-- Have a look at some of my skills I specialized in --</p>
+    <div className=" py-10 bg-gradient-to-b from-black  to-gray-800 text-white">
+      <h2 className="text-4xl text-center font-bold mb-7">Skills</h2>
+      <p className="text-gray-400 mt-2 text-center mb-7 ">-- Have a look at some of my skills I specialized in --</p>
 
       <div className="mt-6 w-full max-w-5xl mx-auto px-4">
         <Slider {...settings}>
