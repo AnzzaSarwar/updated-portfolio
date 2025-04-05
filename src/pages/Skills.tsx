@@ -24,14 +24,13 @@ const skills: Skill[] = [
 
 const SkillsSlider: React.FC = () => {
   const settings = {
-    
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    arrows: true,
+    arrows: false,
     responsive: [
       { breakpoint: 1024, settings: { slidesToShow: 3 } },
       { breakpoint: 768, settings: { slidesToShow: 2 } },
@@ -40,28 +39,27 @@ const SkillsSlider: React.FC = () => {
   };
 
   return (
-    <>
-    
-    <div className=" py-10 bg-gradient-to-b from-black  to-gray-800 text-white">
-      <h2 className="text-4xl text-center font-bold mb-7">Skills</h2>
-      <p className="text-gray-400 mt-2 text-center mb-7 ">-- Have a look at some of my skills I specialized in --</p>
+    <div className="py-12 px-4 sm:px-6 bg-gradient-to-b from-black to-gray-800 text-white">
+      <h2 className="text-3xl sm:text-4xl text-center font-bold mb-4">Skills</h2>
+      <p className="text-sm sm:text-base text-gray-400 text-center mb-8">
+        -- Have a look at some of my skills I specialized in --
+      </p>
 
-      <div className="mt-6 w-full max-w-5xl mx-auto px-4">
+      <div className="max-w-5xl mx-auto">
         <Slider {...settings}>
           {skills.map((skill, index) => (
-            <div key={index} className="flex flex-col items-center">
+            <div key={index} className="flex flex-col items-center p-4">
               <img
                 src={skill.src}
                 alt={skill.alt}
-                className={`w-24 h-24 md:w-32 md:h-32 object-contain transition-transform transform hover:scale-110 ${skill.invert ? 'filter invert' : ''}`}
+                className={`w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain transition-transform transform hover:scale-110 ${skill.invert ? 'filter invert' : ''}`}
               />
-              <p className="mt-2 text-lg font-semibold">{skill.alt}</p>
+              <p className="mt-3 text-base sm:text-lg font-semibold text-center">{skill.alt}</p>
             </div>
           ))}
         </Slider>
       </div>
     </div>
-    </>
   );
 };
 
